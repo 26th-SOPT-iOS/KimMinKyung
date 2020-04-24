@@ -59,7 +59,6 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="transferData:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sAd-Pe-JT1"/>
                                     <segue destination="pE1-k2-fcS" kind="presentation" id="KNE-fq-1wL"/>
                                 </connections>
                             </button>
@@ -247,7 +246,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9bF-mJ-e8T"/>
+        <segue reference="KNE-fq-1wL"/>
         <segue reference="3u5-JN-mCW"/>
     </inferredMetricsTieBreakers>
     <resources>

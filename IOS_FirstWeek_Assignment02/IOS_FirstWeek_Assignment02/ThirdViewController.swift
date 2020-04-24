@@ -22,11 +22,11 @@ class ThirdViewController: UIViewController {
 
     @IBOutlet weak var passwordLabel: UILabel!
     
-    @IBAction func DismissView(_ sender: Any) {self.dismiss(animated: true, completion: nil)
+    @IBAction func DismissView(_ sender: Any) {            self.dismiss(animated: true, completion: nil)
     }
     var nameStr: String?
     var passwordStr: String?
-       
+
     private func setLabels() {
               guard let name = self.nameStr else { return }
                guard let password = self.passwordStr else { return }

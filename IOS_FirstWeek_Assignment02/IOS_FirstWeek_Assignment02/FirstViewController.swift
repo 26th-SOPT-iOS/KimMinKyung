@@ -19,14 +19,12 @@ class FirstViewController: UIViewController {
    
     @IBAction func Next(_ sender: Any) {
     }
-    @IBAction func transferData(_ sender: Any) {
-        guard let receiveViewController = self.storyboard?.instantiateViewController(identifier: "thirdViewController") as? ThirdViewController else {return}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let vc = segue.destination as? ThirdViewController else { return }
         
-        receiveViewController.nameStr = nameStr.text
-        receiveViewController.passwordStr = passwordStr.text
-       
-        self.present(receiveViewController, animated: true, completion: nil)
-    }
-
-
+        vc.nameStr = nameStr.text
+        vc.passwordStr = passwordStr.text
+        
 }
+}
+
