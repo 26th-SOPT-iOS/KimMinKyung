@@ -26,6 +26,9 @@ class SecondViewController: UIViewController {
      receiveViewController.nameStr = nameStr.text
      receiveViewController.passwordStr = passwordStr.text
     
-     self.present(receiveViewController, animated: true, completion: nil)
+        self.present(receiveViewController, animated: true){
+        
+        self.navigationController?.popViewController(animated: false)
     }
+}
 }
